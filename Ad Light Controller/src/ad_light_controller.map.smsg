@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at digit_display.v(28): Always Construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at led_display.v(12): Always Construct contains both blocking and non-blocking assignments

@@ -1,0 +1,437 @@
+Analysis & Synthesis report for ad_light_controller
+Thu Jun 27 20:02:02 2024
+Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Parameter Settings for Inferred Entity Instance: digit_display:u_digit_display|lpm_counter:counter_rtl_0
+  9. Parameter Settings for Inferred Entity Instance: led_display:u_led_display|lpm_add_sub:Add0
+ 10. Parameter Settings for Inferred Entity Instance: led_display:u_led_display|lpm_add_sub:Add1
+ 11. Parameter Settings for Inferred Entity Instance: led_display:u_led_display|lpm_add_sub:Add2
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                ;
++-----------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Jun 27 20:02:02 2024         ;
+; Quartus II Version          ; 6.0 Build 202 06/20/2006 SP 1 SJ Full Version ;
+; Revision Name               ; ad_light_controller                           ;
+; Top-level Entity Name       ; ad_light_controller                           ;
+; Family                      ; ACEX1K                                        ;
+; Total logic elements        ; 594                                           ;
+; Total pins                  ; 46                                            ;
+; Total memory bits           ; 0                                             ;
+; Total PLLs                  ; 0                                             ;
++-----------------------------+-----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++------------------------------------------------------------+---------------------+---------------------+
+; Option                                                     ; Setting             ; Default Value       ;
++------------------------------------------------------------+---------------------+---------------------+
+; Device                                                     ; EP1K30TC144-3       ;                     ;
+; Top-level entity name                                      ; ad_light_controller ; ad_light_controller ;
+; Family name                                                ; ACEX1K              ; Stratix             ;
+; Use smart compilation                                      ; Off                 ; Off                 ;
+; Create Debugging Nodes for IP Cores                        ; Off                 ; Off                 ;
+; Preserve fewer node names                                  ; On                  ; On                  ;
+; Disable OpenCore Plus hardware evaluation                  ; Off                 ; Off                 ;
+; Verilog Version                                            ; Verilog_2001        ; Verilog_2001        ;
+; VHDL Version                                               ; VHDL93              ; VHDL93              ;
+; State Machine Processing                                   ; Auto                ; Auto                ;
+; Extract Verilog State Machines                             ; On                  ; On                  ;
+; Extract VHDL State Machines                                ; On                  ; On                  ;
+; Add Pass-Through Logic to Inferred RAMs                    ; On                  ; On                  ;
+; NOT Gate Push-Back                                         ; On                  ; On                  ;
+; Power-Up Don't Care                                        ; On                  ; On                  ;
+; Remove Redundant Logic Cells                               ; Off                 ; Off                 ;
+; Remove Duplicate Registers                                 ; On                  ; On                  ;
+; Ignore CARRY Buffers                                       ; Off                 ; Off                 ;
+; Ignore CASCADE Buffers                                     ; Off                 ; Off                 ;
+; Ignore GLOBAL Buffers                                      ; Off                 ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                  ; Off                 ; Off                 ;
+; Ignore LCELL Buffers                                       ; Off                 ; Off                 ;
+; Ignore SOFT Buffers                                        ; On                  ; On                  ;
+; Limit AHDL Integers to 32 Bits                             ; Off                 ; Off                 ;
+; Auto Implement in ROM                                      ; Off                 ; Off                 ;
+; Optimization Technique -- FLEX 10K/10KE/10KA/ACEX 1K       ; Area                ; Area                ;
+; Carry Chain Length -- FLEX 10K                             ; 32                  ; 32                  ;
+; Cascade Chain Length                                       ; 2                   ; 2                   ;
+; Auto Carry Chains                                          ; On                  ; On                  ;
+; Auto Open-Drain Pins                                       ; On                  ; On                  ;
+; Remove Duplicate Logic                                     ; On                  ; On                  ;
+; Auto ROM Replacement                                       ; On                  ; On                  ;
+; Auto RAM Replacement                                       ; On                  ; On                  ;
+; Auto Clock Enable Replacement                              ; On                  ; On                  ;
+; Auto Resource Sharing                                      ; Off                 ; Off                 ;
+; Allow Any RAM Size For Recognition                         ; Off                 ; Off                 ;
+; Allow Any ROM Size For Recognition                         ; Off                 ; Off                 ;
+; Ignore translate_off and translate_on Synthesis Directives ; Off                 ; Off                 ;
+; Show Parameter Settings Tables in Synthesis Report         ; On                  ; On                  ;
+; HDL message level                                          ; Level2              ; Level2              ;
++------------------------------------------------------------+---------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                        ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+
+; ad_light_controller.v            ; yes             ; User Verilog HDL File  ; Z:/Quartus/ad_light_controller/src/ad_light_controller.v            ;
+; digit_display.v                  ; yes             ; User Verilog HDL File  ; Z:/Quartus/ad_light_controller/src/digit_display.v                  ;
+; led_display.v                    ; yes             ; User Verilog HDL File  ; Z:/Quartus/ad_light_controller/src/led_display.v                    ;
+; mode_fsm.v                       ; yes             ; User Verilog HDL File  ; Z:/Quartus/ad_light_controller/src/mode_fsm.v                       ;
+; lpm_counter.tdf                  ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/lpm_counter.tdf         ;
+; lpm_constant.inc                 ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_constant.inc        ;
+; lpm_decode.inc                   ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_decode.inc          ;
+; lpm_add_sub.inc                  ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_add_sub.inc         ;
+; cmpconst.inc                     ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/cmpconst.inc            ;
+; lpm_compare.inc                  ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_compare.inc         ;
+; lpm_counter.inc                  ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/lpm_counter.inc         ;
+; dffeea.inc                       ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/dffeea.inc              ;
+; alt_synch_counter.inc            ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_synch_counter.inc   ;
+; alt_synch_counter_f.inc          ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_synch_counter_f.inc ;
+; alt_counter_f10ke.inc            ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_counter_f10ke.inc   ;
+; alt_counter_stratix.inc          ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_counter_stratix.inc ;
+; aglobal60.inc                    ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/aglobal60.inc           ;
+; alt_counter_f10ke.tdf            ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/alt_counter_f10ke.tdf   ;
+; flex10ke_lcell.inc               ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/flex10ke_lcell.inc      ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/lpm_add_sub.tdf         ;
+; addcore.inc                      ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/addcore.inc             ;
+; look_add.inc                     ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/look_add.inc            ;
+; bypassff.inc                     ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/bypassff.inc            ;
+; altshift.inc                     ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/altshift.inc            ;
+; alt_stratix_add_sub.inc          ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_stratix_add_sub.inc ;
+; alt_mercury_add_sub.inc          ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/alt_mercury_add_sub.inc ;
+; addcore.tdf                      ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/addcore.tdf             ;
+; a_csnbuffer.inc                  ; yes             ; Other                  ; c:/altera/quartus60/libraries/megafunctions/a_csnbuffer.inc         ;
+; a_csnbuffer.tdf                  ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/a_csnbuffer.tdf         ;
+; altshift.tdf                     ; yes             ; Megafunction           ; c:/altera/quartus60/libraries/megafunctions/altshift.tdf            ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++-----------------------------------+-------------------------------------+
+; Resource                          ; Usage                               ;
++-----------------------------------+-------------------------------------+
+; Total logic elements              ; 594                                 ;
+; Total combinational functions     ; 590                                 ;
+;     -- Total 4-input functions    ; 391                                 ;
+;     -- Total 3-input functions    ; 69                                  ;
+;     -- Total 2-input functions    ; 69                                  ;
+;     -- Total 1-input functions    ; 61                                  ;
+;     -- Total 0-input functions    ; 0                                   ;
+; Combinational cells for routing   ; 0                                   ;
+; Total registers                   ; 87                                  ;
+; Total logic cells in carry chains ; 67                                  ;
+; I/O pins                          ; 46                                  ;
+; Maximum fan-out node              ; mode_fsm:u_mode_fsm|current_mode[1] ;
+; Maximum fan-out                   ; 186                                 ;
+; Total fan-out                     ; 2300                                ;
+; Average fan-out                   ; 3.59                                ;
++-----------------------------------+-------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                         ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------+
+; |ad_light_controller                      ; 594 (0)     ; 87           ; 0           ; 46   ; 507 (0)      ; 4 (0)             ; 83 (0)           ; 67 (0)          ; 0 (0)      ; |ad_light_controller                                                                                        ;
+;    |digit_display:u_digit_display|        ; 323 (317)   ; 35           ; 0           ; 0    ; 288 (286)    ; 0 (0)             ; 35 (31)          ; 4 (0)           ; 0 (0)      ; |ad_light_controller|digit_display:u_digit_display                                                          ;
+;       |lpm_counter:counter_rtl_0|         ; 6 (0)       ; 4            ; 0           ; 0    ; 2 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |ad_light_controller|digit_display:u_digit_display|lpm_counter:counter_rtl_0                                ;
+;          |alt_counter_f10ke:wysi_counter| ; 6 (6)       ; 4            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |ad_light_controller|digit_display:u_digit_display|lpm_counter:counter_rtl_0|alt_counter_f10ke:wysi_counter ;
+;    |led_display:u_led_display|            ; 267 (205)   ; 48           ; 0           ; 0    ; 219 (157)    ; 0 (0)             ; 48 (48)          ; 63 (1)          ; 0 (0)      ; |ad_light_controller|led_display:u_led_display                                                              ;
+;       |lpm_add_sub:Add0|                  ; 15 (0)      ; 0            ; 0           ; 0    ; 15 (0)       ; 0 (0)             ; 0 (0)            ; 15 (0)          ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add0                                             ;
+;          |addcore:adder|                  ; 15 (1)      ; 0            ; 0           ; 0    ; 15 (1)       ; 0 (0)             ; 0 (0)            ; 15 (1)          ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add0|addcore:adder                               ;
+;             |a_csnbuffer:result_node|     ; 14 (14)     ; 0            ; 0           ; 0    ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 14 (14)         ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node       ;
+;       |lpm_add_sub:Add1|                  ; 16 (0)      ; 0            ; 0           ; 0    ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 16 (0)          ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add1                                             ;
+;          |addcore:adder|                  ; 16 (1)      ; 0            ; 0           ; 0    ; 16 (1)       ; 0 (0)             ; 0 (0)            ; 16 (1)          ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add1|addcore:adder                               ;
+;             |a_csnbuffer:result_node|     ; 15 (15)     ; 0            ; 0           ; 0    ; 15 (15)      ; 0 (0)             ; 0 (0)            ; 15 (15)         ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node       ;
+;       |lpm_add_sub:Add2|                  ; 31 (0)      ; 0            ; 0           ; 0    ; 31 (0)       ; 0 (0)             ; 0 (0)            ; 31 (0)          ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add2                                             ;
+;          |addcore:adder|                  ; 31 (1)      ; 0            ; 0           ; 0    ; 31 (1)       ; 0 (0)             ; 0 (0)            ; 31 (1)          ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add2|addcore:adder                               ;
+;             |a_csnbuffer:result_node|     ; 30 (30)     ; 0            ; 0           ; 0    ; 30 (30)      ; 0 (0)             ; 0 (0)            ; 30 (30)         ; 0 (0)      ; |ad_light_controller|led_display:u_led_display|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node       ;
+;    |mode_fsm:u_mode_fsm|                  ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ad_light_controller|mode_fsm:u_mode_fsm                                                                    ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 87    ;
+; Number of registers using Synchronous Clear  ; 4     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 76    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 43    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: digit_display:u_digit_display|lpm_counter:counter_rtl_0 ;
++------------------------+-------------------+-------------------------------------------------------------+
+; Parameter Name         ; Value             ; Type                                                        ;
++------------------------+-------------------+-------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                                              ;
+; LPM_WIDTH              ; 4                 ; Untyped                                                     ;
+; LPM_DIRECTION          ; UP                ; Untyped                                                     ;
+; LPM_MODULUS            ; 0                 ; Untyped                                                     ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                                                     ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                                                     ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                                                     ;
+; DEVICE_FAMILY          ; ACEX1K            ; Untyped                                                     ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                                                     ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH                                          ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK                                          ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                                                     ;
+; LABWIDE_SCLR           ; ON                ; Untyped                                                     ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                                                     ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                                                     ;
++------------------------+-------------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: led_display:u_led_display|lpm_add_sub:Add0 ;
++------------------------+-------------+------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                 ;
++------------------------+-------------+------------------------------------------------------+
+; LPM_WIDTH              ; 16          ; Untyped                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                              ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                              ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                              ;
+; LPM_PIPELINE           ; 0           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                              ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 1           ; Untyped                                              ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                              ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                   ;
+; DEVICE_FAMILY          ; ACEX1K      ; Untyped                                              ;
+; USE_WYS                ; OFF         ; Untyped                                              ;
+; STYLE                  ; FAST        ; Untyped                                              ;
+; CBXI_PARAMETER         ; add_sub_7nh ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                       ;
++------------------------+-------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: led_display:u_led_display|lpm_add_sub:Add1 ;
++------------------------+-------------+------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                 ;
++------------------------+-------------+------------------------------------------------------+
+; LPM_WIDTH              ; 16          ; Untyped                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                              ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                              ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                              ;
+; LPM_PIPELINE           ; 0           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                              ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 1           ; Untyped                                              ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                              ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                   ;
+; DEVICE_FAMILY          ; ACEX1K      ; Untyped                                              ;
+; USE_WYS                ; OFF         ; Untyped                                              ;
+; STYLE                  ; FAST        ; Untyped                                              ;
+; CBXI_PARAMETER         ; add_sub_dch ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                       ;
++------------------------+-------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: led_display:u_led_display|lpm_add_sub:Add2 ;
++------------------------+-------------+------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                 ;
++------------------------+-------------+------------------------------------------------------+
+; LPM_WIDTH              ; 32          ; Untyped                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                              ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                              ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                              ;
+; LPM_PIPELINE           ; 0           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                              ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 1           ; Untyped                                              ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                              ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                   ;
+; DEVICE_FAMILY          ; ACEX1K      ; Untyped                                              ;
+; USE_WYS                ; OFF         ; Untyped                                              ;
+; STYLE                  ; FAST        ; Untyped                                              ;
+; CBXI_PARAMETER         ; add_sub_5nh ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                       ;
++------------------------+-------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Jun 27 20:01:58 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ad_light_controller -c ad_light_controller
+Info: Found 1 design units, including 1 entities, in source file ad_light_controller.v
+    Info: Found entity 1: ad_light_controller
+Info: Found 1 design units, including 1 entities, in source file digit_display.v
+    Info: Found entity 1: digit_display
+Info: Found 1 design units, including 1 entities, in source file led_display.v
+    Info: Found entity 1: led_display
+Info: Found 1 design units, including 1 entities, in source file mode_fsm.v
+    Info: Found entity 1: mode_fsm
+Info: Elaborating entity "ad_light_controller" for the top level hierarchy
+Info: Elaborating entity "mode_fsm" for hierarchy "mode_fsm:u_mode_fsm"
+Info: Elaborating entity "digit_display" for hierarchy "digit_display:u_digit_display"
+Warning (10101): Verilog HDL unsupported feature warning at digit_display.v(17): Initial Construct is not supported and will be ignored
+Info: Elaborating entity "led_display" for hierarchy "led_display:u_led_display"
+Warning (10005): Verilog HDL or VHDL warning at led_display.v(61): can't check case statement for completeness because the case expression has too many possible states
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred lpm_counter megafunction (LPM_WIDTH=4) from the following logic: "digit_display:u_digit_display|counter[0]~8"
+Info: Found 1 design units, including 1 entities, in source file c:/altera/quartus60/libraries/megafunctions/lpm_counter.tdf
+    Info: Found entity 1: lpm_counter
+Info: Elaborated megafunction instantiation "digit_display:u_digit_display|lpm_counter:counter_rtl_0"
+Info: Found 1 design units, including 1 entities, in source file c:/altera/quartus60/libraries/megafunctions/alt_counter_f10ke.tdf
+    Info: Found entity 1: alt_counter_f10ke
+Info: Elaborated megafunction instantiation "digit_display:u_digit_display|lpm_counter:counter_rtl_0|alt_counter_f10ke:wysi_counter", which is child of megafunction instantiation "digit_display:u_digit_display|lpm_counter:counter_rtl_0"
+Info: Instantiated megafunction "digit_display:u_digit_display|lpm_counter:counter_rtl_0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_DIRECTION" = "UP"
+    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
+Info: Found 1 design units, including 1 entities, in source file c:/altera/quartus60/libraries/megafunctions/lpm_add_sub.tdf
+    Info: Found entity 1: lpm_add_sub
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0"
+Info: Found 1 design units, including 1 entities, in source file c:/altera/quartus60/libraries/megafunctions/addcore.tdf
+    Info: Found entity 1: addcore
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0|addcore:adder", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "16"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Found 1 design units, including 1 entities, in source file c:/altera/quartus60/libraries/megafunctions/a_csnbuffer.tdf
+    Info: Found entity 1: a_csnbuffer
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:oflow_node", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "16"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "16"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Found 1 design units, including 1 entities, in source file c:/altera/quartus60/libraries/megafunctions/altshift.tdf
+    Info: Found entity 1: altshift
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "16"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add0"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "16"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add1|addcore:adder", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add1"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add1" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "16"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2|addcore:adder", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add2" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "32"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:oflow_node", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add2" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "32"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add2" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "32"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "led_display:u_led_display|lpm_add_sub:Add2"
+Info: Instantiated megafunction "led_display:u_led_display|lpm_add_sub:Add2" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "32"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Implemented 640 device resources after synthesis - the final resource count might be different
+    Info: Implemented 6 input pins
+    Info: Implemented 40 output pins
+    Info: Implemented 594 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Processing ended: Thu Jun 27 20:02:02 2024
+    Info: Elapsed time: 00:00:04
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in Z:/Quartus/ad_light_controller/src/ad_light_controller.map.smsg.
+
+

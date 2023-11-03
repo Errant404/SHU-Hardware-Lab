@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Oct 12 01:19:15 2023
+Quartus II Version : 6.0 Build 202 06/20/2006 SP 1 SJ Full Version
+Revision Name : lab2
+Top-level Entity Name : lab2
+Family : ACEX1K
+Device : EP1K50TC144-1
+Timing Models : Final
+Total logic elements : 1 / 2,880 ( < 1 % )
+Total pins : 5 / 102 ( 5 % )
+Total memory bits : 0 / 40,960 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )

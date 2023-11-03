@@ -1,0 +1,48 @@
+Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
+2
+29
+OFF
+OFF
+OFF
+OFF
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+XNOR3
+# storage
+db|lab3.(1).cnf
+db|lab3.(1).cnf
+# case_insensitive
+# source_file
+..|..|..|..|program files (x86)|altera|quartus60|libraries|others|maxplus2|XNOR3.bdf
+77bdd595f679fe273cb6a46ee1f2c80
+24
+# end
+# entity
+lab3
+# storage
+db|lab3.(0).cnf
+db|lab3.(0).cnf
+# case_insensitive
+# source_file
+lab3.bdf
+b2eaa3a99a5b48758b6272926bbab490
+24
+# hierarchies {
+|
+}
+# end
+# complete
+

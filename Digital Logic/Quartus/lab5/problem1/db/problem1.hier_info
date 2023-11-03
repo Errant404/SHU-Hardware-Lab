@@ -1,0 +1,7 @@
+|problem1
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+CP => inst5.CLK
+S => inst4.IN0
+R => inst.IN0
+
+

@@ -1,1 +1,1 @@
-# SHU-Hardware-Course
+# SHU-Hardware-Lab

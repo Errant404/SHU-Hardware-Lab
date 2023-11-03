@@ -1,0 +1,7 @@
+|problem2
+Q <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CL => inst4.CLK
+T => inst.IN0
+T => inst1.IN1
+
+

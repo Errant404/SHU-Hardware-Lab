@@ -1,0 +1,9 @@
+|lab5
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.ACLR
+CP => inst.CLK
+K => inst3.IN0
+J => inst5.IN1
+S => inst.PRESET
+
+

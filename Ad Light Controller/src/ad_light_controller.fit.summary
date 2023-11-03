@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Jun 27 20:02:09 2024
+Quartus II Version : 6.0 Build 202 06/20/2006 SP 1 SJ Full Version
+Revision Name : ad_light_controller
+Top-level Entity Name : ad_light_controller
+Family : ACEX1K
+Device : EP1K30TC144-3
+Timing Models : Final
+Total logic elements : 595 / 1,728 ( 34 % )
+Total pins : 46 / 102 ( 45 % )
+Total memory bits : 0 / 24,576 ( 0 % )
+Total PLLs : 0
